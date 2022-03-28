@@ -5,6 +5,7 @@
     height: 100%;
 }
 .body{
+    max-width: 1250px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -12,24 +13,316 @@
     padding: 0;
     font-size: 16px;
     line-height: 22px;
-    font-family: "rubik" "rubik mono one" "sans-serif";
+    font-family: "roboto" "roboto condensed" "sans-serif";
     color:#4a4b4c;
-    background-color:#eee;
+    background-color:#e5e5e5;
     flex-wrap: nowrap;
 }
 .img{
     height:auto;
     max-width: 100%;   
 }
-*:focus{
-    outline: 3px dashed skyblue;
-    outline-offset: 3px;
-}
 .container{
-    max-width: 1260px;
+    max-width: 1100px;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
 }
+/* header */
+.site-header {
+    background-color: #fff;
+    background-image: url(../img/intro-bg.jpg);
+    background-repeat:no-repeat;
+    background-position: left calc(50% + 500px) top calc(50% + 90px);
+    padding-bottom: 183px;
+    border-bottom: 2px solid #DDDDDD;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 36px;
+}
+.apple-logo:hover{
+    opacity: 0.8;
+}
+.apple-logo:active{
+    opacity: 0.6;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    list-style: none;
+}
+.list-item-link {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #333333;
+    margin-right: 30px;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 3px;
+    transition: border-bottom 1s ease;
+}
+.list-item-link:hover{
+    border-bottom: 3px solid #333333;
+}
+.list-item-link:hover{
+    opacity: 0.8;
+}
+.list-item-link:active{
+    opacity: 0.6;
+}
+.form-input {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #666666;
+    border: none;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 6px;
+    margin-left: 10px;
+}
+.header-content {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777777;
+    width: 1147px;
+    margin-top: 170px;
+}
+.header-content{
+}
+.header-main-content{
+    width: 331px;
+}
+.freedom-call {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.header-text{
+    margin: 0;
+    margin-bottom: 30px;
+    width: 490px;
+    padding-left: 40px;
+    border-left:3px solid #888888;
+}
+.watch-link{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #EA625C;
+    padding: 12px 39px;
+    
+}
+.watch-link:hover{
+    background-color: #C9514C;
+    opacity: 0.8;
+}
+.watch-link:active{
+    background-color: #C9514C;
+    opacity: 0.6;
+}
+
+/* main */
+.site-main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 70px;
+}
+.main-list {
+    
+}
+.target {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 70px;
+}
+.list-main-item {
+    width: 280px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+    width: 280px;
+}
+.list-main-item:last-child{
+    margin-right: 0;
+}
+.main-theme {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #222222
+}
+.main-content {
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+}
+.learn-border{
+    
+}
+.learn-more {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #EA625C;
+    padding-left: 50px;
+}
+.learn-more::before{
+    border: 3px solid #EA625C;
+    width: 40px;
+    content:""
+}
+
+.site-motto {
+    display: flex;
+    justify-content: space-between;
+}
+.motto-theme {
+    width: 450px;
+    padding: 106px 0;
+}
+.about-nike {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+    padding-bottom: 30px;
+}
+.motto-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777777;
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    border-left:3px solid #888888;
+}
+.buy a {
+    text-decoration: none;
+    padding: 12px 90px;
+    background-color:  #EA625C;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.buy{
+    margin-top: 30px;
+}
+
+/* footer */
+
+.site-footer {
+    padding-top: 70px;
+    background-image: url(../img/runners\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-wrapper {
+    padding: 240px 50px 240px 560px;
+   
+}
+.footer-theme {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+    width: 490px;
+    height: 120px;
+}
+.footer-text {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 490px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding-left: 40px;
+    border-left: 3px solid #FFFFFF;
+    margin-top: 30px;
+}
+.footer-link {
+    display: inline-block;
+    align-items: center;
+    padding: 12px 46px;
+    background: #EA625C;
+    color:#fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    border:none;
+    margin-top: 30px;
+}
+
